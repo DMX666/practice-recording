@@ -84,4 +84,15 @@
 ### 学习收获（[学习资源]()）
   - 可以精简代码，在开头做三个If判断时，可以合并其中两个
   - 可以使用String str = ""; str = str+stackChar.pop()更为简单
+## t150[逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
+### 初始思路
+  - 充分理解波兰表达式如何求值，就可以写出该题
+  - 遇见符号就取数字做运算，并将运算结果写入栈中
+  - 遇见数字就写入栈中
+  - 入栈，要将字符串转为int
+### 学习收获([学习资源](https://programmercarl.com/0150.%E9%80%86%E6%B3%A2%E5%85%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC.html#%E9%A2%98%E5%A4%96%E8%AF%9D))
+  - 字符串因为是 **对象类型**，不能用==进行判断，要用str.equals(str1)
+  - equals比较的是对象的内容（区分大小写），==比较的是内存地址（即便内容相同，对象的内存地址也是不同的）
+  - string 转 int    Integer.valueOf(str)      Integer.parseInt(str)
+  - int 转 string      Integer.toString(num)    String s = ""+num   String.valueOf(num)
   
