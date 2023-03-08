@@ -5,8 +5,7 @@
   - 首先通过最大值确定中间节点，空列表的返回null
   - 然后左边递归为左子树，右边为右子树
   - 
-  '''java
-  class Solution {
+`  class Solution {
     public TreeNode constructMaximumBinaryTree(int[] nums) {
         if(nums.length == 0){return null;}
         return consTree(nums);}
@@ -28,8 +27,7 @@
         int[] right = Arrays.copyOfRange(nums,maxIndex+1,nums.length);
         root.left = consTree(left);
         root.right = consTree(right);
-        return root; }}
-    '''
+        return root; }}`
  - 运行通过，可喜可贺
 ### 学习收获
   
