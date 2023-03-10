@@ -89,13 +89,13 @@
   - 如果左右子树都不为null，说明左右子树各有一个值，那么root就是最近的公共祖先
   - 代码的简化
   - ```
-  if(root == null){return null;}
+    if(root == null){return null;}
         if(root.val == p.val || root.val == q.val){
             return root;
         }
     ```
   - ```
-  if(root == null || root.val == p.val || root.val == q.val){
+    if(root == null || root.val == p.val || root.val == q.val){
             return root;
         }
     ```  
