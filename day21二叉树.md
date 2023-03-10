@@ -87,13 +87,14 @@
   - 左遍历得到left节点，右遍历得到right节点
   - 接下来是中间节点的处理，看左右节点是否都为空，如果都为空说明左右子树中是没有p q的，如果一个为空一个不为空，那么就是刚刚所说的第二个情况，返回不为空的即可，那么这里就没有遍历到另外一个，其实不需要遍历到，如果改点在别的树中，一定会被节点返回的
   - 如果左右子树都不为null，说明左右子树各有一个值，那么root就是最近的公共祖先
-  - 代码的简化```
+  - 代码的简化
+  - ```
   if(root == null){return null;}
         if(root.val == p.val || root.val == q.val){
             return root;
         }
     ```
-    - ```
+  - ```
   if(root == null || root.val == p.val || root.val == q.val){
             return root;
         }
