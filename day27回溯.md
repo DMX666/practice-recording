@@ -24,3 +24,35 @@
             sum -= candidates[i];
             path.remove(path.size()-1);
     ```
+## t131[分割回文串](https://leetcode.cn/problems/palindrome-partitioning/)
+### 初始思路
+  - 要多重循环，n×n-1，从第0个到第n-1个开始的从1一个到n-1个，逐一分割每次分割出的都进行判断是回文就记录，不是就下一个
+  - ```
+        class Solution {
+        List<List<String>> res = new ArrayList<>();
+        List<String> temp = new LinkedList<>();
+        public List<List<String>> partition(String s) {
+            for(int i=0; i<s.length(); i++){
+                for(int j=i;j<s.length();j++){
+                    temp.add(Character.toString(s.charAt(j)));
+                    if(isPalindrome(temp)){
+                        res.add(new ArrayList(temp));
+                    }
+
+                }
+                temp = null;
+            }
+            return res;
+
+        }
+
+        public boolean isPalindrome(List<String> list){
+            List<String> temp = list;
+            Collections.reverse(list);
+            if(temp.equals(list)){
+                return true;
+            }
+            return false;
+        }
+    }
+    ```
