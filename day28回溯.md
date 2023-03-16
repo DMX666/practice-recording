@@ -1,0 +1,24 @@
+# day28
+## t93[复原IP地址](https://leetcode.cn/problems/restore-ip-addresses/)
+### 初始思考
+  - 感觉很难
+### 学习收获[学习资源](https://www.bilibili.com/video/BV1XP4y1U73i/?spm_id_from=333.788&vd_source=f0ddb4642249f19ba16b9ccf8ca6e632)
+  - 跟分割回文串非常相似，分割在回溯中本身是比较难的题目
+  - 不要想着用for循环，嵌套层数太多了
+  - 关键是画出树形图，横向和纵向都画出来，横向是for，纵向是递归
+  - 本题还需要额外处理子串的合法性
+    - 用逗点数量来确定，这样也减少了无效递归（减少深度），注意第三个逗点也满足之后，最后一段子串的合法性还没有做判断
+    - index其实就是分割线，最后一段是从Index开始的
+    - 注意区间，左闭右闭
+    - 注意这里要添加逗号，回溯和递归的时候要注意下标
+    - 对子串要进行合法性判断，对于子串下标定位很重要
+ ## t78[子集](https://leetcode.cn/problems/subsets/)
+ ### 初始思路
+ ### 学习收获[学习资源](https://programmercarl.com/0078.%E5%AD%90%E9%9B%86.html#%E5%9B%9E%E6%BA%AF%E4%B8%89%E9%83%A8%E6%9B%B2)
+  - 每层递归中都有结果的收集，与之前不同的是，这里没有要被遗弃的结果
+  - 注意是i+1还是Index+1常常弄错
+ ## t90[子集2](https://leetcode.cn/problems/subsets-ii/description/)
+ ### 初始思路
+  - 与之前做切割的时候十分相似，只是这里要结合上一题中的方法，不重复的话要使用一个used布尔型数组来做标记
+ ### 学习收获[学习资源](https://programmercarl.com/0090.%E5%AD%90%E9%9B%86II.html#%E6%80%9D%E8%B7%AF)
+  - 忘记sort了
