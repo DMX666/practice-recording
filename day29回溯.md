@@ -38,4 +38,19 @@
 
           }
       }
-    ```
+  - ```
+## t46[排列](https://leetcode.cn/problems/permutations/)
+### 初始思路
+  - 不知道如何使用回溯
+### 学习收获[学习资源](https://www.bilibili.com/video/BV19v4y1S79W/?spm_id_from=333.788&vd_source=f0ddb4642249f19ba16b9ccf8ca6e632)
+  - 不需要考虑去重问题
+  - 排列与组合不同，排列强调顺序，组合强调元素内容
+  - 排列中相同元素不能重复使用，用use来进行标记
+  - 求排列的时候for循环从0开始，因为可以重复使用
+## t47[全排列Ⅱ](https://leetcode.cn/problems/permutations-ii/)
+### 初始思路
+  - 同上一题相同，在添加res的时候判断一下是否有，如果有就不添加
+### 学习收获[学习资源](https://www.bilibili.com/video/BV1R84y1i7Tm/?spm_id_from=333.788&vd_source=f0ddb4642249f19ba16b9ccf8ca6e632)
+  - 数层不能重复，树枝可以
+  
+  
