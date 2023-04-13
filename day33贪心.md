@@ -1,0 +1,9 @@
+# day33
+## t134[加油站](https://leetcode.cn/problems/gas-station/)
+### 初始思路
+  - 没啥思路，还是不会找突破口，分解子问题
+### 学习收获([学习资源](https://programmercarl.com/0134.%E5%8A%A0%E6%B2%B9%E7%AB%99.html))
+  - 暴力求解是0(n^2)，以每个加油站为起点，进行尝试，但是显然这不合适，在手撕代码的时候，暴力求解方式也可以提到
+  - 先找出特殊情况：gas总和小于cost总和，无论如何也不可能跑完一圈
+  - rest[i]=gas[i]-cost[i]；i从0开始累加rest[i]，和记为curSum，curSum<0,说明[0,i]都不能作为起点，从i+1重新开始计算，刚刚已经计算过，整体的curSum不是负数
+  - 这里对于特殊情况的排除和其他情况都融合在一个for循环中了，用totalSum和curSum两个变量分别承担不同角色
