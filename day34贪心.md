@@ -1,4 +1,4 @@
-# day33
+# day34
 ## t134[加油站](https://leetcode.cn/problems/gas-station/)
 ### 初始思路
   - 没啥思路，还是不会找突破口，分解子问题
