@@ -7,6 +7,8 @@
     - 单调栈里元素是递增还是递减
 ## t739[每日温度](https://leetcode.cn/problems/daily-temperatures/)
 ### 学习收获[学习资源](https://programmercarl.com/0739.%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6.html#%E6%80%9D%E8%B7%AF)
+  - 单调栈中存放的下标即可
+  - 这里找右边更大的元素，从栈顶到栈底是单调递增的
   - 使用单调栈主要有三个判断条件
     - 当前遍历的元素T[i]小于栈顶元素T[st.top()]的情况
     - 当前遍历的元素T[i]等于栈顶元素T[st.top()]的情况
